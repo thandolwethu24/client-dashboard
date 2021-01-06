@@ -9,6 +9,6 @@ class Applicant extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
-//    protected $fillable= ['first_Name', 'last_name', 'mobile_number', 'email_address'];
+//    protected $guarded = [];
+    protected $fillable= ['first_Name', 'last_name', 'mobile_number', 'email_address'];
 }

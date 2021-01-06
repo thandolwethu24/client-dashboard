@@ -19,4 +19,17 @@ class ApiController extends Controller
         $applicants->save();
         return response()->json($applicants);
     }
+
+    public function receive(Request $request){
+        $applicant = Applicant::all();
+        return response()->json($applicant);
+    }
+
+    public function basic(){
+        $applicant = [
+            'username ' => 'applicant',
+            'pass' => 'canCode'
+        ];
+        return response()->json($applicant);
+    }
 }
